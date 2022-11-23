@@ -22,6 +22,7 @@ func (r *K8ssandraClusterReconciler) createDatacenterConfigs(
 	logger logr.Logger,
 	systemReplication cassandra.SystemReplication,
 ) ([]*cassandra.DatacenterConfig, error) {
+
 	kcKey := utils.GetKey(kc)
 	var dcConfigs []*cassandra.DatacenterConfig
 
